@@ -1,0 +1,46 @@
+/*h2 {
+	color: orange;
+}
+
+h3 {
+	color: yellow !important;
+}
+
+.red {
+    color: red;
+}
+
+h3 {
+    color: orange;
+}
+
+#yellow {
+    color: yellow;
+}
+
+h4 {
+    color: blue;
+}
+
+input[type='text'] {
+    border:  2px solid red;
+}
+
+input[type='email'] {
+    border:  2px solid blue;
+}*/
+
+/* First child & last child */
+
+p:first-child span {
+	color: red;
+}
+
+p:last-child span{
+	color: orange;
+}
+
+h3 {
+	color: brown;
+}
+

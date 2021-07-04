@@ -1,0 +1,12 @@
+p {
+	color: orange;
+}
+
+p:nth-child(3) {
+	color: red;
+}
+
+p:nth-child(10) {
+	color: blue;
+}
+
