@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite CSS</title>
+    <style>
+        span {
+            display: block;
+            width: 350px;
+            height: 390px;
+            background: orange;
+            margin-bottom: 5px;
+            background-image: url(./img/sprite.png);
+            background-repeat: no-repeat;
+        }
+
+        span:nth-of-type(1) {
+            background-position: 0px;
+        }
+
+        span:nth-of-type(2) {
+            background-position: -1237px 0px;
+        }
+
+        span:nth-of-type(3) {
+            background-position: -2030px 0px;
+        }
+
+        span:nth-of-type(4) {
+            background-position: -1630px 0px;
+        }
+    </style>
+</head>
+<body>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+</body>
+</html>

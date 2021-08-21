@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tahoma';
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+/* Header */
+
+header {
+    min-height: 65px;
+}
+
+.header-wrap {
+    display: flex;
+    min-height: 65px;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo a {
+    text-transform: uppercase;
+    color: #3bb877;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+nav {
+    width: 60%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #565c65;
+    text-transform: uppercase;
+    padding: 0px 20px 0px 20px;
+    font-weight: 500;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #3bb877;
+}
+
+.toolbar {
+    width: 15%;
+    text-align: right;
+}
+
+.toolbar a {
+    display: block;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.toolbar a .cart-total-product {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: #3bb877;
+    color: #FFF;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 50%;
+    top: -10px;
+    right: -17px;
+}
+
+/* Banner */
+
+banner {
+   width: 100%;
+   min-height: 560px; 
+   position: relative;
+   display: block;
+}
+
+banner .slider-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+banner .slider-item img {
+    max-width: 100%;
+    width: 100%;
+}
+
+banner .slider-item h3 {
+    color: #333;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+    top: 40%;
+    left: 10%;
+}
+
+banner .slider-item h3 p {
+    color: #3bb877;
+    margin-top: 10px;
+}
+
+/* Product List */
+
+product-list {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+}
+
+product-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+product-list ul li {
+    width: 19%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+product-list ul li  img {
+    max-width: 100%;
+}
+
+product-list ul li h2 {
+    font-size: 1rem;
+    font-weight: 550;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+product-list ul li p {
+    color: #3bb877;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+product-list ul li:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+product-list ul li:nth-of-type(1) h3 {
+    text-transform: uppercase;
+}
+
+product-list ul li:nth-of-type(1) small {
+    color: #3bb877;
+    font-size: .8rem;
+    display: block;
+}
+
+product-list ul li:nth-of-type(1) p {
+    color: #333;
+    font-size: .9rem;
+    margin-top: 10px;
+}
+
+product-list ul li:hover {
+    cursor: pointer;
+}
+
+product-list ul li:hover .user-action{
+    display: block;
+}
+
+product-list .user-action {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
+product-list .user-action a {
+    background: #3bb877 url(../img/buy.png) no-repeat;
+    display: block;
+    width: 25px;
+    height: 30px;
+}
+
+product-list .user-action a:nth-of-type(1) {
+    background-position: 2px 5px;
+}
+
+product-list .user-action a:nth-of-type(2) {
+    background-position: 2px -42px;
+}
+
+product-list .user-action a:nth-of-type(3) {
+    background-position: 2px -95px;
+}
+
+/* Shipping */
+
+shipping {
+    display: block;
+    width: 100%;
+    background: #f5f6f9;
+    padding: 30px 0px 30px 0px;
+    margin-top: 100px;
+}
+
+shipping ul {
+    display: flex;
+}
+
+shipping ul li {
+    width: 25%;
+    text-align: center;
+}
+
+shipping ul li small {
+    font-size: .9rem;
+}
+
+/* Promotion */
+
+promotion {
+    display: block;
+    width: 100%;
+}
+
+promotion ul {
+    display: flex;
+}
+
+promotion ul li {
+    background: #2e3347;
+    width: 33.3%;
+    text-align: center;
+}
+
+promotion ul li:nth-of-type(2) {
+    background: #343950;
+}
+
+promotion ul li img {
+    width: 100%;
+    max-width: 60%;
+}
+
+/* Product Feature */
+
+.product-list h3, .product-list small {
+    text-align: center;
+    display: block  ;
+}
+
+.product-list h3 {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.product-list small {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #3bb877;
+}
