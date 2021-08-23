@@ -288,3 +288,31 @@ promotion ul li img {
     font-size: 1rem;
     color: #3bb877;
 }
+
+/* Mneu mobile */
+
+nav.mobile {
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    background: #343950;
+    display: none;
+}
+
+nav.mobile ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav.mobile ul li a {
+    display: block;
+    color: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 35px;
+    font-size: 1.1rem;
+}
+

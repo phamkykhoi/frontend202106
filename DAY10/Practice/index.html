@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
 </head>
 <body>
     <header>
@@ -23,17 +24,32 @@
                 </ul>
             </nav>
             <div class="toolbar">
-                <a href="" class="cart-icon">
+                <a href="#" class="cart-icon">
                     <img src="./img/cart_icon.png" />
                     <span class="cart-total-product">10</span>
                 </a>
-                <a href="" class="search-icon">
+                <a href="#" class="search-icon">
                     <img src="./img/search_icon.png" />
                 </a>
-                <a href="" class="more-icon">
-                    <img src="./img/menu.png" alt="">
+                <a href="#" class="more-icon">
+                    <img src="./img/menu.png" alt="" />
                 </a>
             </div>
+
+            <nav class="mobile">
+                <ul>
+                    <li><a href="" class="active">Women</a></li>
+                    <li><a href="">Man</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Jewellery</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="" class="active">Women</a></li>
+                    <li><a href="">Man</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Jewellery</a></li>
+                    <li><a href="">Accessories</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -64,7 +80,7 @@
     <product-list>
         <div class="container">
             <ul class="list-product">
-                <li>
+                <li class="best-seller-description">
                     <h3>Best seller</h3>
                     <small>The best production from us</small>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo mollitia at laboriosam earum</p>
@@ -308,5 +324,11 @@
     </product-list>
 
     <!-- <img src="./shop.jpg" /> -->
+
+    <script>
+        document.querySelector('.more-icon').addEventListener('click', function() {
+            document.querySelector('nav.mobile').style.display = 'block';
+        })
+    </script>
 </body>
 </html>

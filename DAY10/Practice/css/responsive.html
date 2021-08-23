@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive CSS</title></style>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            width: 100%;
+            background-color: #9933cc;
+            min-height: 60px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .left {
+            min-width: 20%;
+        }
+
+        .left ul li a {
+            text-decoration: none;
+            display: block;
+            line-height: 30px;
+            color: #FFF;
+            background-color: #33b5e5;
+            margin-bottom: 8px;
+        }
+
+        .center {
+            min-width: 60%;
+            background-color: pink;
+            min-height: 450px;
+        }
+
+        .right {
+            background-color: #33b5e5;
+            min-width: 20%;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #9933cc;
+            min-height: 40px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            main {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            .left {
+                width: 40%;
+            }
+            
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+
+            .left, .center, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <main>
+        <div class="left">
+            <ul>
+                <li><a href="">Left item 1</a></li>
+                <li><a href="">Left item 1</a></li>
+                <li><a href="">Left item 1</a></li>
+                <li><a href="">Left item 1</a></li>
+                <li><a href="">Left item 1</a></li>
+            </ul>
+        </div>
+        <div class="center">Center</div>
+        <div class="right">
+            <h2>Right side</h2>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

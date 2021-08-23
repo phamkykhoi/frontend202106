@@ -1,0 +1,81 @@
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .logo, .toolbar {
+        width: 50%;
+    }
+
+    .toolbar {
+        padding-right: 10px;
+    }
+
+    .logo a {
+        font-size: 1.1rem;
+        text-align: center;
+        display: block;
+    }
+
+    banner {
+        min-height: 323px;
+    }
+
+    banner .slider-item h3 {
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+        top: 25%;
+        left: 2%;
+    }
+
+    product-list, shipping {
+        margin-top: 10px;
+    }
+
+    product-list ul li.best-seller-description {
+        width: 100%;
+        align-items: center;
+    }
+
+    product-list ul li.best-seller-description p {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    product-list ul li {
+        width: 49%;
+        text-align: center;
+    }
+
+    product-list ul li img {
+        width: 100%;
+    }
+
+    shipping ul {
+        flex-wrap: wrap;
+    }
+
+    shipping ul li {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    
+    shipping ul li:nth-of-type(3) img {
+        margin-top: 15px;
+    }
+
+    promotion ul {
+        flex-wrap: wrap;
+    }
+
+    promotion ul li {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    banner {
+        min-height: 158px;
+    }
+}
