@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background: #773b8c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading {
+            display: flex;
+        }
+
+        .text {
+            font-size: 100px;
+            color: #fec468;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-family: 'Audiowide';
+            font-weight: bold;
+            animation-name: textRun;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        div.text:nth-child(2) {
+            animation-delay: .1s;
+        }
+
+        div.text:nth-of-type(3) {
+            animation-delay: .2s;
+        }
+
+        div.text:nth-of-type(4) {
+            animation-delay: .3s;
+        }
+
+        div.text:nth-of-type(5) {
+            animation-delay: .4s;
+        }
+
+        div.text:nth-of-type(6) {
+            animation-delay: .5s;
+        }
+
+        div.text:nth-of-type(7) {
+            animation-delay: .6s;
+        }
+
+        div.text:nth-of-type(8) {
+            animation-delay: .7s;
+        }
+
+        div.text:nth-of-type(9) {
+            animation-delay: .9s;
+        }
+
+        div.text:nth-of-type(9) {
+            animation-delay: 1s;
+        }
+
+        @keyframes textRun {
+            0% {
+                transform: translateY(0px);
+            }
+
+            40% {
+                transform: translateY(-50px);
+            }
+
+            80%, 100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loading">
+            <div class="text">L</div>
+            <div class="text">o</div>
+            <div class="text">a</div>
+            <div class="text">d</div>
+            <div class="text">i</div>
+            <div class="text">n</div>
+            <div class="text">g</div>
+            <div class="text">.</div>
+            <div class="text">.</div>
+            <div class="text">.</div>
+        </div>
+    </div>
+</body>
+</html>

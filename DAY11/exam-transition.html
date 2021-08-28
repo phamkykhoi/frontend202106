@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        a {
+            background: yellow;
+            font-size: 1.6rem;
+            text-decoration: none;
+            transition-property: 'all';
+            transition-duration: 2s;
+            transition-timing-function: ease;
+        }
+
+        a:hover {
+            color: #FFF;
+            background-color: red;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            padding: 5px;
+            transition: all 1s ease-in .5s;
+        }
+
+        h3:hover {
+            cursor: pointer;
+            border: 2px solid orangered;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <a href="">SUNTECH VIỆT NAM</a>
+    <h3>
+        Học lập trình web
+    </h3>
+</body>
+</html>

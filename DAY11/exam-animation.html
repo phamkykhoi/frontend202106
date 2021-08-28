@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Keyframe</title>
+
+    <style>
+        body {
+            padding-top: 100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .content {
+            font-size: 2rem;
+            animation-name: contentRunning;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: .2s;
+            color:red;
+        }
+
+        @keyframes contentRunning {
+            0% {
+                transform: translateY(0px);
+            }
+
+            45% {
+                transform: translateY(-60px);
+            }
+
+            60% {
+                transform: translateY(0px);
+            }
+
+            80% {
+                transform: translateY(60px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">Test Animation</div>
+    </div>
+</body>
+</html>
