@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+body {
+    background-color: $bgColor;
+    color: $textColor;
+}
+
+h3 {
+    color: red;
+    border: 2px solid $borderColor;
+}
+
+nav {
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+
+        li {
+           display: inline-block;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $textColor;
+                font-size: $normalSize;
+                padding: 15px;
+                background: $linkBgColor;
+
+                &:hover {
+                    background: $linkBgHover;
+                    color: $linkColorHover;
+                }
+            }
+        }
+    }
+}
+
+@function set_width($width) {
+    @if ($width < 10px) {
+        @return ($width + 20px);
+    }
+
+    @return $width;
+}
+
+.container {
+    width: set_width(300px);
+    height: set_width(50px);
+    font-size: set_width(1px);
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,39 @@
+body {
+  background-color: gray;
+  color: #333;
+}
+
+h3 {
+  color: red;
+  border: 2px solid #ffa500;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 15px;
+  background: #27c79f8e;
+}
+nav ul li a:hover {
+  background: #cc952ebf;
+  color: #f2ee03;
+}
+
+.container {
+  width: 300px;
+  height: 50px;
+  font-size: 21px;
+  border: 1px solid #ccc;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.success {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  color: #155724;
+  background-color: #d4edda;
+}
+.success:hover {
+  cursor: pointer;
+  color: #FFF;
+  background: #d4edda;
+}
+
+.danger {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  color: #155724;
+  background-color: #fff3cd;
+}
+.danger:hover {
+  cursor: pointer;
+  color: orange;
+  background: #fff3cd;
+}
+
+/*# sourceMappingURL=demo-mixin.css.map */

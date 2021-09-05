@@ -1,0 +1,20 @@
+{
+  "name": "suntech-sass-training",
+  "version": "1.0.0",
+  "description": "Step1.     npm init",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+    "watch:css": "onchange 'src/scss' -- npm run scss",
+    "start": "npm run serve watch:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  }
+}
