@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Condition in Javascript</title>
+</head>
+<body>
+    <script>
+        let gender = 2
+        let today  = 4
+
+        /**
+         *  Nếu là Nam -> Hiển thị Hello world!
+         *  Nếu là nữ và rơi vào ngày thứ 5 thì hiển thị là 'Được nghỉ' trái lại 'Đi học'
+         */
+        
+        let result = gender === 1 ? 'Hello world!' : (today === 5 ? 'Được nghỉ' : 'Đi học')
+        document.write(`Result: ${result}`)
+    </script>
+</body>
+</html>

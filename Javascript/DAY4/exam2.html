@@ -1,0 +1,25 @@
+<script>
+    // Array Map
+    let products = [{
+        name: 'Product 1',
+        price: 1000000,
+    }, {
+        name: 'Product 2',
+        price: 2000000,
+    }, {
+        name: 'Product 3',
+        price: 3000000,
+    }, {
+        name: 'Product 4',
+        price: 4000000,
+    }, {
+        name: 'Product 5',
+        price: 5000000,
+    }]
+
+    let newProducts = products.map((product) => {
+        if (product.price > 2000000) return product
+    })
+
+    console.log(newProducts)
+</script>

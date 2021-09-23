@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam6</title>
+    <style>
+        .content {
+            background: orange;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="show">Show</button>
+    <button class="hide">Hide</button>
+
+    <div class="content"></div>
+
+    <script>
+        let btnShow = document.querySelector('.show')
+        let btnHide = document.querySelector('.hide')
+        let content = document.querySelector('.content')
+
+        btnHide.addEventListener('click', () => {
+            content.style.display = 'none';
+        })
+
+        btnShow.addEventListener('click', () => {
+            content.style.display = 'block';
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng lặp lồng nhau</title>
+</head>
+<body>
+
+    <script>
+        // In ra bảng cửu chương
+
+        document.write(`<table border='1' width='700' cellspacing='0' cellpadding='0'>`)
+        
+            for (let y = 1; y <= 10; y++) {
+                document.write(`<tr>`)
+
+                    for (let x = 2; x <= 10; x++) {
+                        document.write(`<td> ${x} * ${y} = ` + (x*y) + `</td>`)        
+                    }
+
+                document.write(`</tr>`)
+            }
+
+        document.write(`</table>`)
+    </script>
+</body>
+</html>

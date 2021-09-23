@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break in Javascript</title>
+</head>
+<body>
+    <script>
+        // Có dãy số từ 1 - 100
+        // Kiểm tra nếu dãy số có bất kỳ số nào nào chia hết cho 5 thì sẽ in ra là dãy số không hợp lệ
+
+        /*
+           1->100 
+           1 2 3, 4, 8 ,9, 11, 15 20, 22 30
+
+           5
+           10
+           15
+           20
+           ..
+           ..
+        */
+        // let numbers =
+        
+        let start  = 2;
+        let flag   = true // True dãy số là hợp lệ
+
+        while (start <= 100) {
+            document.write(`${start} - `)
+
+            if (start % 5 === 0) {
+                flag = false
+                break
+            }
+
+            start++
+        }
+
+        if (flag === false) {
+            document.write(`<hr/> Dãy số không hợp lệ`)
+        }
+    </script>
+</body>
+</html>

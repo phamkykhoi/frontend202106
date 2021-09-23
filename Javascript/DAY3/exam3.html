@@ -1,0 +1,46 @@
+<script>
+
+    function step1(callback) {
+        setTimeout(() => {
+            callback()
+            document.write('Comin step 1 </br/>')
+        }, 5000);
+    }
+
+    function step2(callback) {
+        setTimeout(() => {
+            callback()
+            document.write('Comin step 2 </br/>')
+        }, 3000);
+    }
+
+    function step3() {
+        setTimeout(() => {
+            document.write('Comin step 3 </br/>')
+        }, 1000);
+    }
+
+    step1(function() {
+        // Logic
+        step2(function () {
+            // Logic
+            step3(function() {
+                // Logic
+              step4(() => {
+                  // Logic
+                  step5(() => {
+                    step6(() => {
+                        step7(() => {
+                            step8(() => {
+                            })
+                        })
+                    })  
+                  })
+              })  
+            })
+        })
+    })
+
+    // Callbackhell 
+
+</script>

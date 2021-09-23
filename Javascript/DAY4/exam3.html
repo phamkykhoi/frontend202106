@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM trong Javascript</title>
+</head>
+
+<body>
+    <h3 id="demo">suntech.edu.vn</h3>
+
+    <h4 class="test">Hoc lap trinh web</h4>
+    <h4 class="test">Hoc lap trinh web</h4>
+    <h4 class="test">Hoc lap trinh web</h4>
+    <h4 class="test">Hoc lap trinh web</h4>
+    <h4 class="test">Hoc lap trinh web</h4>
+
+    <p>suntech.edu.vn</p>
+    <p>suntech.edu.vn</p>
+    <p>suntech.edu.vn</p>
+    <p>suntech.edu.vn</p>
+    <p>suntech.edu.vn</p>
+
+    <script>
+        let h3El = document.getElementById('demo')
+        let h4El = document.getElementsByClassName('test')
+        let pEl = document.getElementsByTagName('p')
+
+        // h3El.style.border = '2px dotted red';
+        // console.log(h4El)
+        // Array.from(h4El).forEach((item) => {
+        //     item.style.background = 'orange'
+        // })
+
+        Array.from(pEl).forEach((item) => {
+            item.style.color = 'blue'
+        })
+    </script>
+</body>
+
+</html>

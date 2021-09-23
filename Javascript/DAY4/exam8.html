@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <input type="text" id="fullname" placeholder='Your name' size='45' />
+    <button>Register</button>
+    <button class="get-content">Get Content</button>
+    <p id="result">
+        Fullname display over here
+        <strong>DEMO</strong>
+    </p>
+
+    <script>
+        let btnReg = document.querySelector('button')
+        let fullnameEl = document.querySelector('#fullname')
+
+        btnReg.addEventListener('click', () => {
+
+            if (!fullnameEl.value) {
+                alert('Vui long nhap Fullname')
+                return false;
+            }
+
+            // document.write(fullnameEl.value)
+            document.querySelector('#result').innerHTML = `Fullname: ${fullnameEl.value}`
+        })
+
+        document.querySelector('.get-content').addEventListener('click', () => {
+            let content = document.querySelector('#result').innerText
+            alert(content)
+        })
+    </script>
+</body>
+
+</html>

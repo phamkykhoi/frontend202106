@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue in Javascript</title>
+</head>
+<body>
+    
+    <script>
+        let number = 1
+        // Trong dãy số từ 1 - 100, sẽ không xử lý logic những giá là 40, 50
+
+        while(number <= 100) {
+            number++
+            
+            if (number === 40 || number === 50 ) {
+                continue;
+            }
+
+            document.write(`${number} - `)
+            // Query
+            // Filter data after query
+            // Display return to screen
+        }
+    </script>
+</body>
+</html>

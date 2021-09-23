@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM attribute in Javascript</title>
+    <style>
+        h4[name='test'] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Set Attribute</button>
+    <h4>suntech.edu.vn</h4>
+
+    <p>
+        <img id="img-main" src="http://shopinvest.suntech.edu.vn/storage/images/OcwCwYKhR4dvJ3EN0RMB46qGE1i8uWNGJux8lz7Z.jpg" alt="USA cotton girls' T-shirt with bust111" width="200">
+    </p>
+    <img class="thumbs" src="http://shopinvest.suntech.edu.vn/storage/images/REdAjYYjaCLWT71WXtG0ncQTv7ioR1vmq1DYfd63.jpg" width="100" />
+    <img class="thumbs" src="http://shopinvest.suntech.edu.vn/storage/images/SdlfYJaLKF2HU1I91hKXIu0tty5RVoGdKDwS3iOR.jpg" width="100" />
+
+    <script>
+        document.querySelector('button').addEventListener('click', () => {
+            document.querySelector('h4').setAttribute('name', 'test')
+        })
+
+        let thumbsEl = document.querySelectorAll('.thumbs')
+
+        Array.from(thumbsEl).forEach((img) => {
+            img.addEventListener('click', function() {
+                let srcImg = this.getAttribute('src')
+                document.querySelector('#img-main').setAttribute('src', srcImg)
+            })
+        })
+    </script>
+</body>
+
+</html>

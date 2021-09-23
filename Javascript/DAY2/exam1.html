@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript IF ELSE</title>
+</head>
+<body>
+    <script>
+        let gender = 1 // 1: Nam, 2: nữ
+        let productPrice = 5000000
+        let productQty   = 1
+        let total = 0;
+        let labelGender = gender === 1 ? 'Nam' : 'Nữ';
+
+        if (gender == 1) {
+            total = productPrice - (0.15 * productPrice)
+        } else {
+            total = productPrice - (0.3 * productPrice)
+        }
+
+        document.write(`Bạn là: ${labelGender} <br/>`);
+        document.write(`Tổng tiền phải trả là: ${total}`)
+
+    </script>
+</body>
+</html>
